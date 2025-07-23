@@ -172,6 +172,38 @@ button:hover{
 }
 
 
+.footer{
+    background-color: rgb(5, 5, 5);
+    border-top: 2px solid #D4AF37;
+    padding: 2rem;
+    color: #42A5F5;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;     
+    gap: 1rem;               
+}
+
+.footer a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer-section1{
+    text-align: center;
+}
+.footer-section2{
+    text-align: center;
+}
+.footer-section3{
+    text-align: center;
+}
+
+.footer h3,p{
+    color:#D4AF37
+}
+
+
 @keyframes scrolling{
     from{
         opacity: 0;
@@ -183,3 +215,4 @@ button:hover{
         scale:1;
     }
 }
+
