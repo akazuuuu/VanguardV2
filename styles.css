@@ -128,6 +128,7 @@ nav .nav-links li a:hover {
 #HeroP{
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
+    color: white;
 }
 
 .Hero h1{
@@ -137,19 +138,25 @@ nav .nav-links li a:hover {
   font-family:"Playfair Display",sans-serif;
 }
 
-
-.blur {
+/*BLURS*/
+.blur-sphere {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background: radial-gradient(circle, #D4AF37, transparent 70%);
-  filter: blur(300px);
-  z-index: 0;
-  top: 120%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #D4AF37;
+  filter: blur(200px);
+  z-index: -1;
+  pointer-events: none;
 }
+
+/* Position each one differently */
+#sphere1 { top: 100%; left: 5%; }
+#sphere2 { top: 200%; left: 90%; }
+#sphere3 { top: 35%; left: 20%; }
+
+
+
 
 button{
     background: linear-gradient(45deg, #d4af37, #f4e99b);
@@ -171,6 +178,171 @@ button:hover{
             box-shadow: 0 10px 50px rgba(212, 175, 55, 0.5);
 }
 
+/*HERO CONTAINER 2*/
+.HContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 900px;    
+    margin: 0 auto; 
+    padding-top: 5rem;
+    animation: scrolling1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+#Hero1Vid{
+    border: 2px solid #D4AF37;
+    max-width: 500px;
+    animation-delay: 2s;
+}
+
+.Hero1Text p{
+ 
+    font-size: 1.5rem;
+    color: white;
+    font-family:"Montserrat",sans-serif;
+   
+}
+
+.Hero1Text h1{
+    background: linear-gradient(90deg, #D4AF37, #F6E27F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family:"Playfair Display",sans-serif;
+  font-size: 3rem;
+}
+
+
+/*Featured*/
+
+.Feature h1{
+    color: #D4AF37;
+    text-align: center;
+    font-family:"Playfair Display",sans-serif;
+    animation: scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+    
+}
+/*IMAGE CAROUSEL 1*/
+.image-carousel1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    
+    animation: carousel1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    margin-top: 0.2rem;
+}
+
+.image-carousel1 img{
+    width: 20%;
+    height: auto;
+     transition: all 0.3s ease;
+}
+.image-carousel1 {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.slide img {
+  width: 400px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Text overlay */
+.overlay-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #D4AF37;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  pointer-events: none;
+  font-family: "Playfair Display", sans-serif;
+}
+
+
+.image-carousel1 img:hover{
+    transform: translateY(-10px);
+            box-shadow: 0 10px 50px rgba(212, 175, 55, 0.5);
+}
+
+#Aurum{
+    color: #D4AF37;
+    animation: carousel1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+}
+
+/*IMAGE CAROUSEL 2*/
+.image-carousel2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    
+    animation: carousel2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    margin-top: 0.2rem;
+}
+
+.image-carousel2 img{
+    width: 20%;
+    height: auto;
+     transition: all 0.3s ease;
+}
+.image-carousel2 {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.slide2 {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.slide2 img {
+  width: 400px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.image-carousel2 img:hover{
+    transform: translateY(-10px);
+            box-shadow: 0 10px 50px rgba(212, 175, 55, 0.5);
+}
+
+#Noirsteel{
+    color: #D4AF37;
+    animation: carousel2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+}
 
 .footer{
     background-color: rgb(5, 5, 5);
@@ -200,8 +372,24 @@ button:hover{
 }
 
 .footer h3,p{
-    color:#D4AF37
+    color:#D4AF37;
 }
+
+hr{
+  border: none; 
+  margin-top: 6000px;   
+  margin-bottom: 30px;
+
+  height: 4px;
+  background: linear-gradient(to right, #C39738, #FFD700, #B8860B);
+  margin: 30px auto;
+  width: 50%;
+  animation: scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+
 
 
 @keyframes scrolling{
@@ -216,3 +404,40 @@ button:hover{
     }
 }
 
+
+@keyframes scrolling1 {
+    from{
+       opacity: 0;
+       transform: translateX(-300px); 
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    
+    }
+}
+
+@keyframes carousel1{
+    from{
+        opacity: 0;
+        transform: translateX(400px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes carousel2{
+    from{
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
