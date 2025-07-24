@@ -27,3 +27,4 @@ video.addEventListener("loadedmetadata", () => {
     }
   });
 });
+

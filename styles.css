@@ -196,6 +196,9 @@ button:hover{
     border: 2px solid #D4AF37;
     max-width: 500px;
     animation-delay: 2s;
+    box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
 }
 
 .Hero1Text p{
@@ -387,6 +390,80 @@ hr{
   animation: scrolling linear;
     animation-timeline: view();
     animation-range: entry 0% cover 50%;
+}
+
+
+/*ICONS AND FEATUER CONTAINER*/
+
+.material-icons{
+  color: #D4AF37;
+  font-size:410px;
+  flex-wrap: wrap;
+}
+
+
+.features-flex{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap:4rem;
+  padding: 4rem 2rem;
+  animation: scrolling 0.2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+
+.features-item{
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 2rem 1.4rem;
+
+}
+
+.features-item:hover{
+  transform: translateY(-15px);
+   box-shadow: 0 10px 50px rgba(212, 175, 55, 0.5);
+   border-radius: 40px;
+}
+
+
+.features-item h1{
+  color: #D4AF37;
+  font-family:"Playfair Display", sans-serif;
+}
+
+.features-item p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+/*HERO 2 VID*/
+
+#hero2vid{
+  border: 3px solid #D4AF37;
+  box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+margin-top: 5rem;
+justify-content: center;
+text-align: center;
+margin: auto;
+display: block;
+animation: scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.features-item p {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.features-item:hover p {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 
