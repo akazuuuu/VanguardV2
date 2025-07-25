@@ -467,8 +467,6 @@ animation: scrolling linear;
 }
 
 
-
-
 @keyframes scrolling{
     from{
         opacity: 0;

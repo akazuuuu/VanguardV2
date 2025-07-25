@@ -1,0 +1,253 @@
+/*ABOUT CSS*/
+#absBG{
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid#d4af37;
+}
+
+
+.AboutContainer{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;    
+    margin: 0 auto; 
+    padding-top: 5rem;
+    animation: scrolling4 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+#aboutPic{
+border: 2px solid #D4AF37;
+    max-width: 500px;
+    animation-delay: 1s;
+    box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+}
+
+
+.About1Text h1{
+  color: #D4AF37;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 3rem;
+}
+
+.About1Text p{
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/*THE VANGUARD PHILOSOPHY*/
+
+.Philosophy-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap:4rem;
+  padding: 4rem 2rem;
+}
+
+.Philosophy-items{
+    text-align: center;
+  transition: all 0.3s ease;
+  padding: 2rem 1.4rem;
+  flex-wrap: wrap;
+  animation: scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.Philosophy-items h1{
+    color:#D4AF37;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.Philosophy-items p{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.PhilosophyHero{
+    margin:0 auto;
+    text-align: center;
+    font-size: 4rem;
+    color: #D4AF37;
+    font-family: "Playfair Display", sans-serif;
+    font-style: bold;
+}
+
+/*watch parts process*/
+.watch_parts{
+ display: block;
+ margin: 0 auto;
+}
+
+#watch_parts {
+  max-width: 100%; 
+  height: auto;
+}
+
+.WatchProcess{
+    color: #D4AF37;
+    font-family:"Playfair Display";
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+
+/*WATCH MAKING PROCESS*/
+
+.Making1,
+.Making2,
+.Making3,
+.Making4,
+.Making5 {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #D4AF37;
+     box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 20px 36px 6px rgba(0,0,0,0.75);
+
+
+}
+
+.WatchMaking1 h1,
+.WatchMaking2 h1,
+.WatchMaking3 h1,
+.WatchMaking4 h1,
+.WatchMaking5 h1{
+    color: #D4AF37;
+    font-family: "Playfair Display", sans-serif;
+    text-align: center;
+    font-size: 4.2rem;
+    animation: scrolling4 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+
+.WatchMaking1 p,
+.WatchMaking2 p,
+.WatchMaking3 p,
+.WatchMaking4 p,
+.WatchMaking5 p{
+color: white;
+width: 900px;
+text-align: center;
+margin: 0 auto;
+font-family: "Montserrat", sans-serif;
+font-size: 1.5rem;
+animation: scrolling4 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+
+}
+
+.Making1,
+.Making3,
+.Making5{
+    animation: Making1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+.Making2,
+.Making4{
+    animation: Making2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+/*ANIMATION KEYFRAMES*/
+
+@keyframes scrolling4{
+    from{
+        opacity: 0;
+        scale: 0.7;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes Making1 {
+    from{
+       opacity: 0;
+       transform: translateX(-500px); 
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    
+    }
+}
+
+@keyframes Making2 {
+    from{
+       opacity: 0;
+       transform: translateX(500px); 
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    
+    }
+}
+
+.blur-circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #D4AF37;
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: 0.6;
+  z-index: -1;
+  left: 50%;
+}
+
+.blur-circle2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #D4AF37;
+  border-radius: 50%;
+  filter: blur(250px);
+  opacity: 0.6;
+  z-index: -1;
+  left: 20%;
+}
+
+.blur-circle3 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #D4AF37;
+  border-radius: 50%;
+  filter: blur(250px);
+  opacity: 0.6;
+  z-index: -1;
+  left: 100%;
+}
+.blur-circle4 {
+  position: absolute;
+  width: 400000px;
+  height: 400px;
+  background: #D4AF37;
+  border-radius: 50%;
+  filter: blur(5500px);
+  opacity: 0.6;
+  z-index: -1;
+  left: 100%;
+}
