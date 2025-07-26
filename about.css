@@ -262,3 +262,19 @@ animation: scrolling4 linear;
 }
 
 
+@keyframes scroll1{
+    from{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
